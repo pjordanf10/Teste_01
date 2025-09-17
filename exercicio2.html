@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Auxílio Covid-19: Você Tem Direito ao Benefício?</h1>
+
+    Renda do usuário:
+    <input type="text" id="input_usuario"> <br><br>
+
+    Renda total da família:
+    <input type="text" id="input_familia"> <br><br>
+
+    <button onclick="verificar()">Verificar ajuda</button> 
+</body>
+</html>
+
+<script>
+
+    function verificar() {
+        var usuario = input_usuario.value
+        var familia = input_familia.value
+
+        if (usuario <= 1050 && familia <= 2100) {
+            alert ("Você terá direito!")
+        } else {
+            alert ("Você NÃO terá direito")
+        }
+    }
+
+
+</script>
